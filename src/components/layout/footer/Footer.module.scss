@@ -1,0 +1,52 @@
+.footer {
+  .content {
+    background: #212529;
+    color: white;
+    padding: 40px 80px;
+    .blocks {
+      display: flex;
+      justify-content: space-between;
+      .block {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+        }
+        .signUp {
+          display: flex;
+          gap: 10px;
+          input {
+            border: none;
+            border-radius: 5px;
+            padding: 5px 0px;
+            width: 300px;
+          }
+          button {
+            border: none;
+            border-radius: 5px;
+            padding: 5px 20px;
+          }
+        }
+        p {
+          width: 500px;
+        }
+      }
+      .block:nth-child(2) {
+        text-align: right;
+        .social {
+          display: flex;
+          justify-content: right;
+          gap: 70px;
+          .icon {
+            font-size: 35px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

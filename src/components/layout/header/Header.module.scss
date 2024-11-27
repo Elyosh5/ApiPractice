@@ -1,0 +1,35 @@
+.header {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #adb5bd;
+    padding: 20px 40px;
+    .logo h1 {
+      font-size: 27px;
+      font-weight: 500;
+    }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      .icon {
+        font-size: 25px;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+    }
+    .actions {
+      display: flex;
+      gap: 25px;
+      .icon {
+        font-size: 27px;
+        cursor: pointer;
+      }
+    }
+  }
+}
