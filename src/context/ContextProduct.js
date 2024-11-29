@@ -6,6 +6,7 @@ export const useProduct = () => useContext(contextProduct);
 
 const ContextProduct = ({ children }) => {
   const [data, setData] = useState([]);
+  const [newData, setNewData] = useState({});
   const API =
     "https://api.elchocrud.pro/api/v1/c50f25fc01ae9b083d764eb497ef5cbc/testt";
 
@@ -20,6 +21,15 @@ const ContextProduct = ({ children }) => {
   async function deleteProduct(id) {
     await axios.delete(`${API}/${id}`);
     readProduct();
+  }
+
+  async function addToFavorite(product) {
+    setNewData(product);
+  }
+  console.log(newData);
+
+  async function newProducts(id) {
+    console.log(id);
   }
 
   const [page, setPage] = useState(1);
@@ -40,6 +50,8 @@ const ContextProduct = ({ children }) => {
     setPage,
     count,
     deleteProduct,
+    newProducts,
+    addToFavorite,
   };
   return (
     <contextProduct.Provider value={values}>{children}</contextProduct.Provider>

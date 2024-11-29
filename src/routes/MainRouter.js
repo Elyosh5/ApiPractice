@@ -4,6 +4,9 @@ import HomePage from "../components/pages/homePage/HomePage";
 import ProductsPage from "../components/pages/productsPage/ProductsPage";
 import AboutPage from "../components/pages/aboutPage/AboutPage";
 import AdminPage from "../components/pages/adminPage/AdminPage";
+import CartPage from "../components/pages/cartPage/CartPage";
+import FavoritePage from "../components/pages/favoritesPage/FavoritePage";
+import ProfilePage from "../components/pages/profilePage/ProfilePage";
 
 const MainRouter = () => {
   const PUBLIC = [
@@ -26,6 +29,21 @@ const MainRouter = () => {
       link: "/About",
       element: <AboutPage />,
       id: 4,
+    },
+    {
+      link: "/Profile",
+      element: <ProfilePage />,
+      id: 5,
+    },
+    {
+      link: "/Favorites",
+      element: <FavoritePage />,
+      id: 6,
+    },
+    {
+      link: "/cart",
+      element: <CartPage />,
+      id: 7,
     },
   ];
   return (

@@ -1,0 +1,91 @@
+.profilePage {
+  background: #212529;
+  height: 100vh;
+  padding-top: 50px;
+  .content {
+    .logIn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .logInInputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #d9d9d9;
+        width: 710px;
+        height: 400px;
+        border-radius: 16px;
+        gap: 30px;
+        h1 {
+          display: flex;
+          font-size: 24px;
+          color: rgb(221, 220, 220);
+          background: #6c757d;
+          width: inherit;
+          height: 60px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 16px 16px 0px 0px;
+          font-weight: 500;
+        }
+
+        input {
+          background: #6c757d;
+          border: none;
+          border-radius: 8px;
+          width: 450px;
+          height: 40px;
+          font-size: 16px;
+          padding: 0px 10px;
+        }
+        h2 {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        .userName {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .password {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        button {
+          background: #1cd698;
+          border: none;
+          padding: 10px 30px;
+          font-size: 18px;
+          border-radius: 8px;
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+        }
+      }
+    }
+    .notSeller {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 450px;
+      background: white;
+      border-radius: 16px;
+      padding: 15px 0px;
+      p {
+        font-size: 16px;
+      }
+      button {
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        gap: 20px;
+        color: #0e7a0e;
+        text-decoration: underline;
+      }
+    }
+  }
+}
